@@ -1,35 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Header from './components/header'
+import Footer from './components/footer'
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    return (
+      <div className='parent' style={{ border: '2px solid black' }}>
+        <div className='div1' style={{ border: '2px solid black' }}><Header /></div>
+        <div className='div2' style={{ border: '2px solid black' }}>header image here</div>
+        <div className='div3' style={{ border: '2px solid black' }}>about section</div>
+        <div className='div4' style={{ border: '2px solid black' }}>image one</div>
+        <div className='div5' style={{ border: '2px solid black' }}>image two</div>
+        <div className='div6' style={{ border: '2px solid black' }}>skills</div>
+        <div className='div7' style={{ border: '2px solid black' }}>timeline component</div>
+        <div className='div8' style={{ border: '2px solid black' }}>image three</div>
+        <div className='div9' style={{ border: '2px solid black' }}>image four</div>
+        <div className='div10' style={{ border: '2px solid black' }}><Footer /></div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
-
-export default App
+    )
+    }
+  
+  export default App
