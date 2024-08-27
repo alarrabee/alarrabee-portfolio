@@ -1,0 +1,32 @@
+p {
+    font-family: monospace;
+    font-size: 140%;
+}
+
+/* Blinking Cursor */
+.typed-text {
+    font-family: monospace;
+}
+  
+.cursor {
+    display: inline-block;
+    width: 10px;
+    animation: blink 1s step-end infinite;
+}
+  
+@keyframes blink {
+    from, to {
+        visibility: hidden;
+}
+    50% {
+        visibility: visible;
+}
+}
+
+
+.grid-container {
+    display: grid;
+    place-items: center;
+    margin: 50px 20px 30px 20px;
+}
+
