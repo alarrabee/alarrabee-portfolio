@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom'
+import { Outlet, useLocation } from 'react-router-dom'
 
 // import ComputerImg from './assets/images/computer.png'
 // import BookImg from './assets/images/books.png'
@@ -10,8 +10,9 @@ import Header from './components/header'
 import Footer from './components/footer'
 
 function App() {
+    const location = useLocation();
     return (
-        <div class="parent">
+        <div>
             {/* <div class="div1"><img src={ComputerImg} alt='cozy computer desk set in front of a window surrounded by plants' /></div>
             <div class="div2" style={{ border: '2px solid black' }}><About /></div>
             <div class="div3" style={{ border: '2px solid black' }}><img src={BookImg} alt='books on a wooden shelf' /></div>
@@ -20,9 +21,9 @@ function App() {
             <div class="div6" style={{ border: '2px solid black' }}>Timeline</div>
             <div class="div7" style={{ border: '2px solid black' }}><img src={PlantImg} alt='potted plants arranged on a windowsill' /></div>
             <div class="div8" style={{ border: '2px solid black' }}><img src={TeaImg} alt='cup of tea on a small wooden table' /></div> */}
-            <Header />
+            {location.pathname !== '/' && <Header />}
             <Outlet />
-            <Footer />
+            {location.pathname !== '/' && <Footer />}
         </div>
     )
 }
