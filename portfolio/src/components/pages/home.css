@@ -1,4 +1,15 @@
-.title-home {
+/* tea image */
+.tea-img-container {
+    display: grid;
+    justify-items: center;
+}
+
+.tea-img {
+    max-width: 100px;
+}
+
+/* title */
+.home-title-container {
     text-align: center;
     margin: 50px auto;
     padding: 100px 30px 50px 30px;
