@@ -6,6 +6,8 @@ import { Outlet } from 'react-router-dom'
 // import PlantImg from './assets/images/plants.png'
 // import TeaImg from './assets/images/tea.png'
 // import About from './components/about'
+import Header from './components/header'
+import Footer from './components/footer'
 
 function App() {
     return (
@@ -18,7 +20,9 @@ function App() {
             <div class="div6" style={{ border: '2px solid black' }}>Timeline</div>
             <div class="div7" style={{ border: '2px solid black' }}><img src={PlantImg} alt='potted plants arranged on a windowsill' /></div>
             <div class="div8" style={{ border: '2px solid black' }}><img src={TeaImg} alt='cup of tea on a small wooden table' /></div> */}
+            <Header />
             <Outlet />
+            <Footer />
         </div>
     )
 }

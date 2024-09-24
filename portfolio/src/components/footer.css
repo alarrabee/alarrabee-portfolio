@@ -1,0 +1,36 @@
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-buttons button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .footer-buttons button:hover {
+    background-color: #777;
+  }
+  
+  .footer-text {
+    text-align: center;
+    flex-grow: 1;
+  }
+  
+  .footer-copy {
+    text-align: right;
+  }
